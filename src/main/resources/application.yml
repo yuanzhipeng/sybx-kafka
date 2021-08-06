@@ -1,0 +1,5 @@
+kafka:
+  topic: test001
+  bootstrap_servers_config: 192.168.56.2:9092
+  groupid:
+    matching-up-balance: 'account-matching-upbalance'
