@@ -38,7 +38,6 @@ public class KafkaSendMessage {
         while(res.hasNext()){
             ConsumerRecord<String, String> record = res.next();
             int partition = record.partition();
-//            String key = record.key();
             String msg = record.value();
             long offset = record.offset();
             log.info("partition is:{}; msg:{}; offset is:{}", partition, msg, offset);
